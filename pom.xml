@@ -345,6 +345,23 @@
                 <artifactId>javax.annotation-api</artifactId>
                 <version>${javax.annotation-api.version}</version>
             </dependency>
+
+            <!--安装的jdk不同，导致的路径不同-->
+            <dependency>
+                <groupId>com.sun</groupId>
+                <artifactId>tools</artifactId>
+                <version>1.8.0</version>
+                <scope>system</scope>
+                <systemPath>/Library/Java/JavaVirtualMachines/jdk1.8.0_301.jdk/Contents/Home/lib/tools.jar</systemPath>
+            </dependency>
+
+            <dependency>
+                <groupId>com.sun</groupId>
+                <artifactId>jconsole</artifactId>
+                <version>1.8.0</version>
+                <scope>system</scope>
+                <systemPath>/Library/Java/JavaVirtualMachines/jdk1.8.0_301.jdk/Contents/Home/lib/jconsole.jar</systemPath>
+            </dependency>
         </dependencies>
     </dependencyManagement>
 
